@@ -420,7 +420,7 @@
 
   var F = {
     mail: 'vikas7pro@gmail.com',
-    ig: 'https://www.instagram.com/vikas.creation/',
+    ig: 'https://www.instagram.com/_vikas.creation_/',
     li: 'https://www.linkedin.com/in/vikas-tem',
     gh: 'https://github.com/vikaspro-max'
   };
