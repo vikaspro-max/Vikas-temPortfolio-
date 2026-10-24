@@ -1,380 +1,373 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vikas Kumar | BCA Student &amp; Aspiring Web Developer</title>
-  <meta name="description" content="Portfolio of Vikas Kumar, a BCA student exploring web development, graphic design, photo editing and digital content creation.">
-  <meta name="author" content="Vikas Kumar">
-  <meta name="theme-color" content="#101311">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Vikas Kumar | BCA Student &amp; Aspiring Web Developer">
-  <meta property="og:description" content="Building my future through technology and creativity.">
-  <meta property="og:image" content="assets/og-image.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-
-  <!-- Fonts are optional: if they fail to load, system fonts are used. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=Caveat:wght@500;600&display=swap">
-
-  <link rel="stylesheet" href="css/styles.css">
-  <script>document.documentElement.classList.add('js');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vikas Kumar Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Vikas Kumar - BCA student, aspiring web developer and creative designer. Web development, graphic design, photo and video editing.">
+<meta name="theme-color" content="#07050f">
+<meta property="og:title" content="Vikas Kumar | Portfolio">
+<meta property="og:description" content="BCA student, aspiring web developer and creative designer.">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Poppins:wght@300;400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  try {
+    var t = localStorage.getItem('vk-theme');
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) document.documentElement.setAttribute('data-theme', 'light');
+  } catch (e) {}
+</script>
 </head>
 <body>
 
-<!-- Icon sprite: Lucide-style outline icons, inlined so there is no external dependency. -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
-    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
-    <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
-    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
-    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol>
-    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
-    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
-    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
-    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
-    <symbol id="i-code" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></symbol>
-    <symbol id="i-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></symbol>
-    <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
-    <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></symbol>
-    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
-    <symbol id="i-clapper" viewBox="0 0 24 24"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"/><path d="m6.2 5.3 3.1 3.9"/><path d="m12.4 3.4 3.1 4"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></symbol>
-    <symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></symbol>
-    <symbol id="i-award" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
-    <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
-    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
-    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
-    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
-    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol>
-    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
-    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
-    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
-    <symbol id="i-image" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></symbol>
-    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
-    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
-    <symbol id="i-layout" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></symbol>
-    <symbol id="i-video" viewBox="0 0 24 24"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol>
-    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+    <linearGradient id="ul" x1="0" x2="1"><stop offset="0" stop-color="#ec4899"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>
+    <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M17 8h1a4 4 0 0 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></symbol>
+    <symbol id="i-braces" viewBox="0 0 24 24"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5a2 2 0 0 0 2 2h1"/><path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 24 24"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/><line x1="14" y1="4" x2="10" y2="20"/></symbol>
+    <symbol id="i-term" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="14" y2="17"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 1 10-10c0 3-2 4-4 4h-2a2 2 0 0 0-1.4 3.4c.8.9.3 2.6-2.6 2.6z"/><circle cx="7.5" cy="11" r="1"/><circle cx="12" cy="7" r="1"/><circle cx="16.5" cy="11" r="1"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m22 8-6 4 6 4z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 17l.7 1.8 1.8.7-1.8.7L19 22l-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></symbol>
+    <symbol id="i-in" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-gh" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><polyline points="2 7 12 13 22 7"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1z"/><path d="M12 15l-3-3a22 22 0 0 1 2-4 12.9 12.9 0 0 1 11-6c0 2.7-.8 7.5-6 11a22 22 0 0 1-4 2z"/><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/></symbol>
   </defs>
 </svg>
 
-<a class="skip-link" href="#main">Skip to content</a>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+<div id="bar"></div>
+<div id="glow"></div>
 
-<!-- ============ Header / Navigation ============ -->
-<header class="site-header" id="top">
-  <div class="progress" aria-hidden="true"></div>
-  <div class="container header-inner">
-    <a class="logo" href="#home" aria-label="Vikas Kumar, back to top">VK<span>.</span></a>
-
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-      <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
-      <svg class="icon icon-close" aria-hidden="true"><use href="#i-x"/></svg>
-    </button>
-
-    <nav class="site-nav" id="site-nav" aria-label="Primary">
-      <ul>
-        <li><a href="#home" data-nav><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg>Home</a></li>
-        <li><a href="#about" data-nav><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>About</a></li>
-        <li><a href="#skills" data-nav><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg>Skills</a></li>
-        <li><a href="#projects" data-nav><svg class="icon" aria-hidden="true"><use href="#i-folder"/></svg>Projects</a></li>
-        <li><a href="#education" data-nav><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg>Education</a></li>
-        <li><a href="#contact" data-nav><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg>Contact</a></li>
-      </ul>
+<header>
+  <div class="nav glass">
+    <a class="logo" href="#top" aria-label="Vikas Kumar, home">
+      <svg class="i" aria-hidden="true"><use href="#i-logo"/></svg>
+      <span class="grad-text">Vikas</span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="#services">What I Do</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn sm" href="#contact">Hire Me</a>
     </nav>
+    <div class="tools">
+      <button class="round glass" id="theme" type="button" aria-label="Switch light or dark theme">
+        <svg class="i moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="i sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
   </div>
 </header>
 
-<main id="main">
-
-  <!-- ============ Hero ============ -->
-  <section class="hero" id="home" aria-labelledby="hero-title">
-    <div class="container hero-grid">
-
-      <figure class="portrait reveal" style="--d:0ms">
-        <div class="portrait-frame">
-          <img
-            src="assets/vikas-profile.jpg"
-            srcset="assets/vikas-profile-520.jpg 520w, assets/vikas-profile.jpg 960w"
-            sizes="(min-width: 900px) 440px, 90vw"
-            width="960" height="1280"
-            alt="Portrait of Vikas Kumar in a dark suit and tie, seated at a desk with a notebook and pen."
-            fetchpriority="high">
-        </div>
-        <p class="doodle" aria-hidden="true">that's me!
-          <svg viewBox="0 0 60 50" fill="none"><path d="M4 6 C 26 2, 48 14, 50 40" pathLength="1"/><path d="M42 33 L50 42 L56 31" pathLength="1"/></svg>
-        </p>
-        <figcaption class="portrait-chip">
-          <svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg>
-          BCA · 3rd Semester
-        </figcaption>
-      </figure>
-
-      <div class="hero-copy">
-        <p class="eyebrow reveal" style="--d:0ms"><span class="dot" aria-hidden="true"></span>BCA Student &amp; Aspiring Web Developer</p>
-
-        <h1 id="hero-title" class="reveal" style="--d:80ms">
-          <span class="greet">Hi, I'm Vikas Kumar.</span>
-          Building my future through <em>technology</em> and <em class="scribble">creativity<svg class="scribble-line" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8 C 30 2, 60 11, 95 6 S 160 3, 197 7" pathLength="1"/></svg></em>.
-        </h1>
-
-        <p class="lead reveal" style="--d:160ms">
-          I'm a BCA student exploring web development, graphic design, and digital content creation. I enjoy learning new tools and turning ideas into practical projects.
-        </p>
-
-        <p class="typed reveal" style="--d:220ms" aria-label="Graphic Designer, Photo Editor, Video Editing Learner">
-          I'm a <span id="typed-word" aria-hidden="true">Graphic Designer</span><span class="caret" aria-hidden="true"></span>
-        </p>
-
-        <div class="btn-row reveal" style="--d:280ms">
-          <a class="btn btn-primary" href="#projects">Explore My Work<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
-          <a class="btn btn-ghost" href="#contact">Let's Connect<svg class="icon" aria-hidden="true"><use href="#i-send"/></svg></a>
-          <!-- The resume button is added by js/main.js only when a resume file is set in js/config.js -->
-          <span id="resume-slot"></span>
-        </div>
+<main>
+<div class="hero-wrap bleed" id="top">
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div class="wrap hero">
+    <div>
+      <span class="status glass"><span class="dot"></span>Open to learning &amp; new projects</span>
+      <p class="hello">Hi, I'm</p>
+      <h1><span class="grad-text">Vikas Kumar</span>
+        <svg viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M3 10 C 50 3, 90 14, 140 8 S 240 4, 297 9"/></svg>
+      </h1>
+      <p class="role"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg><span><span id="typed">BCA Student</span><span class="caret" aria-hidden="true"></span></span></p>
+      <p class="lead">I'm learning to build websites and create digital experiences through <b>web development</b>, <b>graphic design</b> and <b>photo &amp; video editing</b>.</p>
+      <div class="cta">
+        <a class="btn confetti" href="#contact">Hire Me <svg class="i" aria-hidden="true"><use href="#i-up"/></svg></a>
+        <a class="btn ghost" href="#projects">See My Work</a>
+      </div>
+      <div class="stats">
+        <div class="stat glass"><b data-count="7">7</b><span>Skills</span></div>
+        <div class="stat glass"><b data-count="3">3</b><span>Focus areas</span></div>
+        <div class="stat glass"><b data-count="3">3</b><span>Profiles</span></div>
       </div>
     </div>
-  </section>
-
-  <!-- ============ Ticker ============ -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-      <span>Technology &amp; AI</span><span>Cinematic photography</span><span>Digital creativity</span><span>Web development</span><span>Content creation</span>
-      <span>Technology &amp; AI</span><span>Cinematic photography</span><span>Digital creativity</span><span>Web development</span><span>Content creation</span>
+    <div class="stage">
+      <div class="portrait"><img src="images/vikas.jpg" alt="Vikas Kumar in a dark suit, writing in a notebook at a desk" width="900" height="1200" fetchpriority="high"></div>
+      <span class="chip c1 glass" aria-hidden="true"><svg class="i"><use href="#i-code"/></svg></span>
+      <span class="chip c2 glass" aria-hidden="true"><svg class="i"><use href="#i-palette"/></svg></span>
+      <span class="chip c3 glass" aria-hidden="true"><svg class="i"><use href="#i-video"/></svg></span>
+      <span class="note"><svg viewBox="0 0 44 38" aria-hidden="true"><path d="M4 30 C 14 6, 30 4, 40 10"/><path d="M32 4 L40 10 L31 15"/></svg>that's me!</span>
     </div>
   </div>
+</div>
 
-  <!-- ============ About ============ -->
-  <section class="section" id="about" aria-labelledby="about-title">
-    <div class="container">
-      <header class="section-head reveal">
-        <p class="eyebrow">about me</p>
-        <h2 id="about-title">A bit about me.</h2>
-      </header>
+<div class="strip bleed" aria-label="Skills">
+  <div class="track">
+    <span><svg class="i"><use href="#i-code"/></svg>HTML</span>
+    <span><svg class="i"><use href="#i-term"/></svg>C Programming</span>
+    <span><svg class="i"><use href="#i-coffee"/></svg>Java</span>
+    <span><svg class="i"><use href="#i-braces"/></svg>Python</span>
+    <span><svg class="i"><use href="#i-file"/></svg>MS Office</span>
+    <span><svg class="i"><use href="#i-palette"/></svg>Graphic Design</span>
+    <span><svg class="i"><use href="#i-video"/></svg>Photo &amp; Video Editing</span>
+    <span><svg class="i"><use href="#i-code"/></svg>HTML</span>
+    <span><svg class="i"><use href="#i-term"/></svg>C Programming</span>
+    <span><svg class="i"><use href="#i-coffee"/></svg>Java</span>
+    <span><svg class="i"><use href="#i-braces"/></svg>Python</span>
+    <span><svg class="i"><use href="#i-file"/></svg>MS Office</span>
+    <span><svg class="i"><use href="#i-palette"/></svg>Graphic Design</span>
+    <span><svg class="i"><use href="#i-video"/></svg>Photo &amp; Video Editing</span>
+  </div>
+</div>
 
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>I'm Vikas, a Bachelor of Computer Applications student currently in my 3rd semester. I'm building a solid base in programming and web development while growing as a creative: designing graphics and banners, editing photos, and learning video editing.</p>
-          <p>I'm drawn to technology, AI and cinematic visuals, and I like the idea that one skill can strengthen another. My goal is to sharpen my practical technical and creative skills, build useful digital projects, and establish a strong personal brand.</p>
+<section id="services">
+  <div class="wrap">
+    <span class="kicker rv">how I can help</span>
+    <h2 class="sec-title grad-text rv">What I Do</h2>
+    <p class="sec-sub rv">Three areas I enjoy working in and keep getting better at.</p>
+    <div class="grid">
+      <article class="card glass tilt rv">
+        <div class="ic"><svg class="i"><use href="#i-layout"/></svg></div>
+        <h3>Web Development</h3>
+        <p>Learning to build clean, responsive websites, starting with HTML and growing into the full stack.</p>
+        <div class="mini"><span>HTML</span><span>Responsive</span><span>Learning</span></div>
+      </article>
+      <article class="card glass tilt rv">
+        <div class="ic"><svg class="i"><use href="#i-palette"/></svg></div>
+        <h3>Graphic Design</h3>
+        <p>Turning ideas into simple, good-looking visuals for social media, branding and web pages.</p>
+        <div class="mini"><span>Visuals</span><span>Branding</span><span>Social</span></div>
+      </article>
+      <article class="card glass tilt rv">
+        <div class="ic"><svg class="i"><use href="#i-video"/></svg></div>
+        <h3>Photo &amp; Video Editing</h3>
+        <p>Editing photos and clips so they look sharp and tell a clear story.</p>
+        <div class="mini"><span>Photo</span><span>Video</span><span>Creative</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <span class="kicker rv">what I work with</span>
+    <h2 class="sec-title grad-text rv">Skills</h2>
+    <p class="sec-sub rv">The languages and tools I use to learn, build and design.</p>
+    <div class="filters rv" role="group" aria-label="Filter skills">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="programming" aria-pressed="false">Programming</button>
+      <button type="button" data-f="web" aria-pressed="false">Web</button>
+      <button type="button" data-f="creative" aria-pressed="false">Creative</button>
+      <button type="button" data-f="productivity" aria-pressed="false">Productivity</button>
+    </div>
+    <div class="grid skills">
+      <div class="card glass tilt rv" data-cat="web"><div class="ic"><svg class="i"><use href="#i-code"/></svg></div><small>Web</small><h3>HTML</h3><p>The structure behind every web page I build.</p></div>
+      <div class="card glass tilt rv" data-cat="programming"><div class="ic"><svg class="i"><use href="#i-term"/></svg></div><small>Programming</small><h3>C Programming</h3><p>Logic and problem-solving fundamentals.</p></div>
+      <div class="card glass tilt rv" data-cat="programming"><div class="ic"><svg class="i"><use href="#i-coffee"/></svg></div><small>Programming</small><h3>Java</h3><p>Object-oriented thinking, one program at a time.</p></div>
+      <div class="card glass tilt rv" data-cat="programming"><div class="ic"><svg class="i"><use href="#i-braces"/></svg></div><small>Programming</small><h3>Python</h3><p>Clean, readable code for scripts and problem solving.</p></div>
+      <div class="card glass tilt rv" data-cat="productivity"><div class="ic"><svg class="i"><use href="#i-file"/></svg></div><small>Productivity</small><h3>MS Office</h3><p>Documents, sheets and presentations.</p></div>
+      <div class="card glass tilt rv" data-cat="creative"><div class="ic"><svg class="i"><use href="#i-palette"/></svg></div><small>Design</small><h3>Graphic Design</h3><p>Visual ideas turned into clean designs.</p></div>
+      <div class="card glass tilt rv" data-cat="creative"><div class="ic"><svg class="i"><use href="#i-video"/></svg></div><small>Media</small><h3>Photo &amp; Video Editing</h3><p>Raw photos and clips polished into finished work.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <span class="kicker rv">things I've made</span>
+    <h2 class="sec-title grad-text rv">Projects</h2>
+    <p class="sec-sub rv">My first project is the site you're looking at. More are on the way.</p>
+    <div class="grid">
+      <article class="card glass proj tilt rv">
+        <span class="badge"><svg class="i"><use href="#i-check"/></svg>Live</span>
+        <h3>This Portfolio</h3>
+        <p>A responsive personal website with a light and dark theme, glass effects, animations and a built-in chat assistant.</p>
+        <div class="mini"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <a class="more" href="https://github.com/vikaspro-max" target="_blank" rel="noopener noreferrer">View on GitHub <svg class="i"><use href="#i-up"/></svg></a>
+      </article>
+      <article class="card glass proj soon tilt rv">
+        <span class="badge"><svg class="i"><use href="#i-rocket"/></svg>Coming soon</span>
+        <h3>Next Web Project</h3>
+        <p>A new website build is in progress. Follow my GitHub to see it when it lands.</p>
+      </article>
+      <article class="card glass proj soon tilt rv">
+        <span class="badge"><svg class="i"><use href="#i-rocket"/></svg>Coming soon</span>
+        <h3>Design Showcase</h3>
+        <p>A collection of graphic design and photo/video edits will be added here.</p>
+      </article>
+    </div>
+    <div class="gh-cta rv"><a class="btn ghost confetti" href="https://github.com/vikaspro-max" target="_blank" rel="noopener noreferrer"><svg class="i"><use href="#i-gh"/></svg>More on GitHub</a></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <span class="kicker rv">a little bit about me</span>
+    <h2 class="sec-title grad-text rv">About Me</h2>
+    <div class="about">
+      <div class="card-me glass rv">
+        <svg class="i big" aria-hidden="true"><use href="#i-cap"/></svg>
+        <h3>Vikas Kumar</h3>
+        <p>BCA Student<br>Aspiring Web Developer<br>Creative Designer</p>
+      </div>
+      <div class="rv">
+        <p class="t">I'm a BCA student interested in technology, web development and creative design. I enjoy learning new tools and turning ideas into practical digital projects.</p>
+        <ul class="now">
+          <li><svg class="i"><use href="#i-cap"/></svg><span><b>Studying</b> BCA</span></li>
+          <li><svg class="i"><use href="#i-book"/></svg><span><b>Learning</b> web development</span></li>
+          <li><svg class="i"><use href="#i-palette"/></svg><span><b>Exploring</b> graphic design, photo and video editing</span></li>
+        </ul>
+        <div class="tags">
+          <span class="glass"><svg class="i"><use href="#i-code"/></svg>Web development</span>
+          <span class="glass"><svg class="i"><use href="#i-palette"/></svg>Graphic design</span>
+          <span class="glass"><svg class="i"><use href="#i-video"/></svg>Photo &amp; video</span>
         </div>
-
-        <ul class="facts">
-          <li class="fact reveal" style="--d:0ms"><span class="fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span><strong>BCA Student</strong><span>Bachelor of Computer Applications</span></li>
-          <li class="fact reveal" style="--d:80ms"><span class="fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span><strong>3rd Semester</strong><span>Currently in progress</span></li>
-          <li class="fact reveal" style="--d:160ms"><span class="fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg></span><strong>Technical + Creative</strong><span>Code, design and visuals</span></li>
-          <li class="fact reveal" style="--d:240ms"><span class="fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg></span><strong>Continuous Learning</strong><span>New tools, step by step</span></li>
-        </ul>
       </div>
     </div>
-  </section>
+    <div class="term glass rv">
+      <div class="term-bar"><i></i><i></i><i></i><span>about.js</span></div>
+<pre><code><span class="k">const</span> vikas = {
+  role: <span class="s">"BCA Student"</span>,
+  focus: [<span class="s">"Web Development"</span>, <span class="s">"Graphic Design"</span>, <span class="s">"Video Editing"</span>],
+  languages: [<span class="s">"HTML"</span>, <span class="s">"C"</span>, <span class="s">"Java"</span>, <span class="s">"Python"</span>],
+  learning: <span class="p">true</span>,
+  openTo: <span class="s">"new projects &amp; opportunities"</span>,
+};
+<span class="c">// let's build something together</span><span class="cur"></span></code></pre>
+    </div>
+  </div>
+</section>
 
-  <!-- ============ Skills ============ -->
-  <section class="section" id="skills" aria-labelledby="skills-title">
-    <div class="container">
-      <header class="section-head reveal">
-        <p class="eyebrow">skills</p>
-        <h2 id="skills-title">What I know, and what I'm still figuring out.</h2>
-        <p class="section-sub">I didn't put percentage bars here because they'd be made up. A skill is either something I use now, or something I'm still learning.</p>
-      </header>
+<section id="faq">
+  <div class="wrap">
+    <span class="kicker rv">quick answers</span>
+    <h2 class="sec-title grad-text rv">FAQ</h2>
+    <div class="faq" style="margin-top:36px">
+      <details class="glass rv">
+        <summary>What do you do?<svg class="i"><use href="#i-plus"/></svg></summary>
+        <p>I'm a BCA student learning web development, graphic design and photo/video editing, and building small digital projects along the way.</p>
+      </details>
+      <details class="glass rv">
+        <summary>Are you open to work?<svg class="i"><use href="#i-plus"/></svg></summary>
+        <p>I'm open to learning projects, design work and new opportunities. Use the contact form below or email me directly.</p>
+      </details>
+      <details class="glass rv">
+        <summary>What tools do you use?<svg class="i"><use href="#i-plus"/></svg></summary>
+        <p>HTML, C Programming, Java, Python, MS Office, and creative tools for graphic design and photo and video editing.</p>
+      </details>
+      <details class="glass rv">
+        <summary>How can I contact you?<svg class="i"><use href="#i-plus"/></svg></summary>
+        <p>Email <a href="mailto:vikas7pro@gmail.com">vikas7pro@gmail.com</a>, or message me on Instagram or LinkedIn. All links are in the contact section.</p>
+      </details>
+    </div>
+  </div>
+</section>
 
-      <ul class="legend reveal" aria-label="Legend">
-        <li><span class="tag tag-current">Current</span> I use this today</li>
-        <li><span class="tag tag-learning">Learning</span> Still building this skill</li>
-      </ul>
-
-      <div class="skills-grid">
-
-        <article class="card skill reveal" style="--d:0ms">
-          <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
-          <h3>Web Development</h3>
-          <p>Structuring pages and styling them.</p>
-          <ul class="skill-list">
-            <li>HTML <span class="tag tag-current">Current</span></li>
-            <li>CSS <span class="tag tag-learning">Learning</span></li>
-          </ul>
-        </article>
-
-        <article class="card skill reveal" style="--d:70ms">
-          <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg></span>
-          <h3>Programming</h3>
-          <p>Core logic and coursework practice.</p>
-          <ul class="skill-list">
-            <li>C fundamentals <span class="tag tag-current">Current</span></li>
-            <li>C++ coursework <span class="tag tag-learning">Learning</span></li>
-          </ul>
-        </article>
-
-        <article class="card skill reveal" style="--d:140ms">
-          <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></span>
-          <h3>Productivity</h3>
-          <p>Everyday office tools for documents and data.</p>
-          <ul class="skill-list">
-            <li>MS Word <span class="tag tag-current">Current</span></li>
-            <li>MS Excel <span class="tag tag-current">Current</span></li>
-          </ul>
-        </article>
-
-        <article class="card skill reveal" style="--d:0ms">
-          <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg></span>
-          <h3>Graphic Design</h3>
-          <p>Posters, banners and visual layouts.</p>
-          <ul class="skill-list">
-            <li>Banners &amp; posters <span class="tag tag-current">Current</span></li>
-            <li>Visual layouts <span class="tag tag-current">Current</span></li>
-          </ul>
-        </article>
-
-        <article class="card skill reveal" style="--d:70ms">
-          <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg></span>
-          <h3>Photo Editing</h3>
-          <p>Photo enhancement and composition.</p>
-          <ul class="skill-list">
-            <li>Photo enhancement <span class="tag tag-current">Current</span></li>
-            <li>Composition <span class="tag tag-current">Current</span></li>
-          </ul>
-        </article>
-
-        <article class="card skill reveal" style="--d:140ms">
-          <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-clapper"/></svg></span>
-          <h3>Video Editing</h3>
-          <p>Short-form videos and Reels.</p>
-          <ul class="skill-list">
-            <li>Short-form &amp; Reels <span class="tag tag-learning">Learning</span></li>
-          </ul>
-        </article>
-
+<section id="contact">
+  <div class="wrap">
+    <span class="kicker rv">say hello</span>
+    <h2 class="sec-title grad-text rv">Let's Connect</h2>
+    <p class="sec-sub rv">Open to learning projects, design work and new opportunities.</p>
+    <div class="contact-grid">
+      <div class="links">
+        <a class="link glass rv" href="https://www.instagram.com/vikas.creation/" target="_blank" rel="noopener noreferrer">
+          <span class="ico"><svg class="i"><use href="#i-insta"/></svg></span>
+          <span class="txt"><small>Instagram</small><span class="val">vikas.creation</span></span>
+          <svg class="i go"><use href="#i-up"/></svg>
+        </a>
+        <a class="link glass rv" href="https://www.linkedin.com/in/vikas-tem?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">
+          <span class="ico"><svg class="i"><use href="#i-in"/></svg></span>
+          <span class="txt"><small>LinkedIn</small><span class="val">vikas-tem</span></span>
+          <svg class="i go"><use href="#i-up"/></svg>
+        </a>
+        <a class="link glass rv" href="https://github.com/vikaspro-max" target="_blank" rel="noopener noreferrer">
+          <span class="ico"><svg class="i"><use href="#i-gh"/></svg></span>
+          <span class="txt"><small>GitHub</small><span class="val">vikaspro-max</span></span>
+          <svg class="i go"><use href="#i-up"/></svg>
+        </a>
+        <div class="link glass rv">
+          <span class="ico"><svg class="i"><use href="#i-mail"/></svg></span>
+          <span class="txt"><small>Email</small><a class="val mail-text" href="mailto:vikas7pro@gmail.com">vikas7pro@gmail.com</a></span>
+          <button class="copy" id="copy" type="button"><svg class="i"><use href="#i-copy"/></svg><span id="copyt">Copy</span></button>
+        </div>
       </div>
+      <form class="msg glass rv" id="msgform" novalidate>
+        <h3>Send me a message</h3>
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="f-mail">Your email</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" required></textarea></div>
+        <button class="btn" type="submit">Send Message <svg class="i"><use href="#i-send"/></svg></button>
+        <p class="hint" id="f-hint">This opens your email app with the message ready to send.</p>
+      </form>
     </div>
-  </section>
-
-  <!-- ============ Projects ============ -->
-  <section class="section" id="projects" aria-labelledby="projects-title">
-    <div class="container">
-      <header class="section-head reveal">
-        <p class="eyebrow">projects</p>
-        <h2 id="projects-title">Things I'm making.</h2>
-        <p class="section-sub">Cards marked <span class="tag tag-placeholder">Placeholder</span> are empty spots. My real work goes in as I finish it.</p>
-      </header>
-
-      <div class="projects-grid" id="projects-grid">
-        <noscript><p class="muted">Enable JavaScript to see the project cards.</p></noscript>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ Education ============ -->
-  <section class="section" id="education" aria-labelledby="education-title">
-    <div class="container">
-      <header class="section-head reveal">
-        <p class="eyebrow">education</p>
-        <h2 id="education-title">Where I've studied so far.</h2>
-      </header>
-
-      <ol class="timeline">
-        <li class="timeline-item reveal">
-          <span class="timeline-icon"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span>
-          <div class="card">
-            <span class="tag tag-current">In progress</span>
-            <h3>Bachelor of Computer Applications (BCA)</h3>
-            <p>Currently in the 3rd semester.</p>
-          </div>
-        </li>
-        <li class="timeline-item reveal">
-          <span class="timeline-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span>
-          <div class="card">
-            <span class="tag tag-done">Completed</span>
-            <h3>Class 12, PCM</h3>
-            <p>Physics, Chemistry and Mathematics.</p>
-          </div>
-        </li>
-        <li class="timeline-item reveal">
-          <span class="timeline-icon"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span>
-          <div class="card">
-            <span class="tag tag-done">Certification</span>
-            <h3>ADCA</h3>
-            <p>Advanced Diploma in Computer Applications.</p>
-          </div>
-        </li>
-        <li class="timeline-item reveal">
-          <span class="timeline-icon"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span>
-          <div class="card">
-            <span class="tag tag-done">Certification</span>
-            <h3>CCC</h3>
-            <p>Course on Computer Concepts.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ============ Creative Interests ============ -->
-  <section class="section" id="interests" aria-labelledby="interests-title">
-    <div class="container">
-      <header class="section-head reveal">
-        <p class="eyebrow">interests</p>
-        <h2 id="interests-title">What I get lost in.</h2>
-      </header>
-
-      <div class="interest-grid">
-        <article class="interest interest-tech reveal" style="--d:0ms">
-          <svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg>
-          <h3>Technology &amp; AI</h3>
-          <p>Following how new tools change the way we build and create.</p>
-        </article>
-        <article class="interest interest-photo reveal" style="--d:70ms">
-          <svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg>
-          <h3>Cinematic photography</h3>
-          <p>Light, mood and framing that tell a story in one image.</p>
-        </article>
-        <article class="interest interest-digital reveal" style="--d:140ms">
-          <svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>
-          <h3>Digital creativity</h3>
-          <p>Turning ideas into visuals, layouts and small experiments.</p>
-        </article>
-        <article class="interest interest-web reveal" style="--d:70ms">
-          <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>
-          <h3>Web development</h3>
-          <p>Learning to build clean, useful pages from scratch.</p>
-        </article>
-        <article class="interest interest-content reveal" style="--d:140ms">
-          <svg class="icon" aria-hidden="true"><use href="#i-video"/></svg>
-          <h3>Content creation</h3>
-          <p>Short-form video and visuals for a growing personal brand.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ Contact ============ -->
-  <section class="section" id="contact" aria-labelledby="contact-title">
-    <div class="container">
-      <div class="contact-panel reveal">
-        <header class="section-head">
-          <p class="eyebrow">contact</p>
-          <h2 id="contact-title">Say hi.</h2>
-          <p class="section-sub">Happy to talk about learning, projects or working on something creative together. Use whichever you prefer.</p>
-        </header>
-
-        <ul class="contact-list" id="contact-list">
-          <noscript><li class="muted">Enable JavaScript to see contact links.</li></noscript>
-        </ul>
-      </div>
-    </div>
-  </section>
-
+  </div>
+</section>
 </main>
 
-<!-- ============ Footer ============ -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>Designed and built with curiosity by Vikas Kumar. <span class="muted">© <span id="year">2026</span></span></p>
-    <a class="back-top" href="#home">Back to top<svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+<footer class="bleed">
+  <div class="hand">made with care (and a lot of chai)</div>
+  <div class="soc">
+    <a class="round glass" href="https://www.instagram.com/vikas.creation/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="i"><use href="#i-insta"/></svg></a>
+    <a class="round glass" href="https://www.linkedin.com/in/vikas-tem?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="i"><use href="#i-in"/></svg></a>
+    <a class="round glass" href="https://github.com/vikaspro-max" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="i"><use href="#i-gh"/></svg></a>
   </div>
+  <div><button class="btn ghost sm share confetti" id="share" type="button"><svg class="i"><use href="#i-up"/></svg>Share this site</button></div>
+  <div style="margin-top:16px">&copy; 2026 Vikas Kumar</div>
 </footer>
 
-<script src="js/config.js"></script>
-<script src="js/main.js"></script>
+<button id="top-btn" class="glass" type="button" aria-label="Back to top"><svg class="i"><use href="#i-up"/></svg></button>
+<div id="toast" class="glass" role="status" aria-live="polite"><svg class="i"><use href="#i-check"/></svg><span id="toast-t"></span></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<div id="bubble" class="glass">Hi! Ask me anything about Vikas</div>
+<button id="fab" type="button" aria-label="Open chat assistant" aria-expanded="false" aria-controls="chat">
+  <svg class="bot" viewBox="0 0 100 100" aria-hidden="true">
+    <circle cx="50" cy="50" r="50" fill="#fff"/>
+    <line x1="50" y1="22" x2="50" y2="31" stroke="#8b8fa6" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="50" cy="20" r="4" fill="#8b5cf6"/>
+    <rect x="22" y="30" width="56" height="38" rx="17" fill="#eef0f6" stroke="#cfd3e2" stroke-width="2"/>
+    <rect x="29" y="38" width="42" height="22" rx="11" fill="#14172b"/>
+    <rect x="36" y="44" width="8" height="10" rx="4" fill="#2f7bff"><animate attributeName="height" values="10;10;2;10;10" keyTimes="0;.9;.94;.98;1" dur="4s" repeatCount="indefinite"/><animate attributeName="y" values="44;44;48;44;44" keyTimes="0;.9;.94;.98;1" dur="4s" repeatCount="indefinite"/></rect>
+    <rect x="56" y="44" width="8" height="10" rx="4" fill="#2f7bff"><animate attributeName="height" values="10;10;2;10;10" keyTimes="0;.9;.94;.98;1" dur="4s" repeatCount="indefinite"/><animate attributeName="y" values="44;44;48;44;44" keyTimes="0;.9;.94;.98;1" dur="4s" repeatCount="indefinite"/></rect>
+    <path d="M34 72 Q50 66 66 72 L70 88 Q50 94 30 88 Z" fill="#eef0f6" stroke="#cfd3e2" stroke-width="2"/>
+  </svg>
+</button>
+
+<div id="chat" class="glass" role="dialog" aria-label="Chat with Vikas's assistant">
+  <div class="ch">
+    <svg class="av" viewBox="0 0 100 100" aria-hidden="true"><rect x="22" y="30" width="56" height="38" rx="17" fill="#eef0f6"/><rect x="29" y="38" width="42" height="22" rx="11" fill="#14172b"/><rect x="36" y="44" width="8" height="10" rx="4" fill="#2f7bff"/><rect x="56" y="44" width="8" height="10" rx="4" fill="#2f7bff"/></svg>
+    <div><b>Vikas's Assistant</b><small><span class="dot"></span>Online</small></div>
+    <button type="button" class="round" id="closechat" aria-label="Close chat"><svg class="i"><use href="#i-x"/></svg></button>
+  </div>
+  <div id="msgs" aria-live="polite"></div>
+  <div class="qr" id="qr">
+    <button type="button">Skills</button>
+    <button type="button">About Vikas</button>
+    <button type="button">Projects</button>
+    <button type="button">Contact</button>
+    <button type="button">Hire</button>
+  </div>
+  <form class="cf" id="cf" autocomplete="off">
+    <input id="ci" type="text" placeholder="Type your question..." aria-label="Your message" maxlength="300">
+    <button type="submit" aria-label="Send"><svg class="i"><use href="#i-send"/></svg></button>
+  </form>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
